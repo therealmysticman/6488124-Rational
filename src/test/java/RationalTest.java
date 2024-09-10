@@ -16,15 +16,15 @@ public class RationalTest {
     @Test
     public void testSubtract(){
         Rational x = new Rational();
-        x.numerator = 3;
-        x.denominator = 2;
+        x.numerator = 5;
+        x.denominator = 4;
 
         Rational y = new Rational();
         y.numerator = 2;
         y.denominator = 4;
         x.subtract(y);
-        Assert.assertEquals(1, x.numerator);
-        Assert.assertEquals(1, x.denominator);
+        Assert.assertEquals(3, x.numerator);
+        Assert.assertEquals(4, x.denominator);
     }
 
 
@@ -49,10 +49,10 @@ public class RationalTest {
         x.denominator = 3;
 
         Rational y = new Rational();
-        y.numerator = 2;
+        y.numerator = 4;
         y.denominator = 1;
         x.divide(y);
-        Assert.assertEquals(2, x.numerator);
+        Assert.assertEquals(1, x.numerator);
         Assert.assertEquals(1, x.denominator);
     }
 
